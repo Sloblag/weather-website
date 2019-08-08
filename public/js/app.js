@@ -13,7 +13,7 @@ weatherForm.addEventListener('submit', (e) => {
     msgOne.textContent = 'fetching...'
     msgTwo.textContent = ''
     msgThree.textContent = ''
-    msgFour.textContent = ''
+    
 
     fetch('/weather?address=' + location).then((response) => {
         response.json().then((data) => {
